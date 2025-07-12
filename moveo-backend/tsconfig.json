@@ -19,5 +19,6 @@
     "noFallthroughCasesInSwitch": false,
     "strict": true,
     "esModuleInterop": true,
-  }
+  },
+  "extends": "../tsconfig.base.json",
 }

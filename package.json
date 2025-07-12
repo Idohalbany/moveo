@@ -1,0 +1,9 @@
+{
+  "name": "moveo",
+  "private": true,
+  "workspaces": [
+    "moveo-frontend",
+    "moveo-backend",
+    "libs/*"
+  ]
+}

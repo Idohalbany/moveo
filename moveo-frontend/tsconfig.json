@@ -20,5 +20,6 @@
       "@moveo/types": ["../libs/types/src"]
     }
   },
+  "extends": "../tsconfig.base.json",
   "include": ["src"]
 }
