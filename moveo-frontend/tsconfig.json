@@ -16,7 +16,6 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@moveo/store": ["../libs/store/src"],
       "@moveo/types": ["../libs/types/src"]
     }
   },

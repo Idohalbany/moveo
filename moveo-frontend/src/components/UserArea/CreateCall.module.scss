@@ -1,0 +1,82 @@
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollArea {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-right: 8px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.tagList {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.primaryButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1565c0;
+  }
+
+  &:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+}
+
+.outlineButton {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #1976d2;
+  background: transparent;
+  color: #1976d2;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e3f2fd;
+  }
+
+  &:disabled {
+    border-color: gray;
+    color: white;
+    background-color: gray;
+    cursor: not-allowed;
+  }
+}

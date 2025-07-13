@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { DbModule } from './db/db.module';
-import { TasksModule } from './modules/task/tasks.module';
+import { TasksModule } from './modules/tasks/tasks.module';
 import { ConfigModule } from '@nestjs/config/dist/config.module';
 import { CallsModule } from './modules/calls/calls.module';
-import { TagsModule } from './modules/tag/tags.module';
+import { TagsModule } from './modules/tags/tags.module';
 
 @Module({
   imports: [
