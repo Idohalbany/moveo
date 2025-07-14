@@ -11,7 +11,12 @@ export class DbService {
     this.pool = new Pool({
       connectionString: dbConfig.connectionString,
       max: 10,
+      ssl: {
+        rejectUnauthorized: false,
+      },
     });
+
+    this.logger.log(`DB pool created. SSL enabled: ${!!this.pool.options.ssl}`);
   }
 
   async query<T extends QueryResultRow = any>(
