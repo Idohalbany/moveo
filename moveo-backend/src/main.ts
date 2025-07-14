@@ -5,7 +5,12 @@ import { ValidationPipe } from '@nestjs/common';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  app.enableCors();
+  app.enableCors({
+    origin: ['https://moveo-frontend-0q67.onrender.com'],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  });
 
   app.useGlobalPipes(
     new ValidationPipe({
@@ -14,8 +19,6 @@ async function bootstrap() {
       transform: true,
     }),
   );
-
-  app.enableCors({ origin: true, credentials: true });
 
   await app.listen(process.env.PORT || 3000);
 }
